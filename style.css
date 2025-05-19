@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.site-header {
+  background: white;
+  color: #222;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.site-header .logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d72638;
+  letter-spacing: 1px;
+}
+.site-header .main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.site-header .main-nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #222;
+  position: relative;
+}
+.site-header .main-nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #d72638;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+.site-header .main-nav ul li a:hover::after {
+  width: 100%;
+}
+.site-header .main-nav ul li a:hover {
+  color: #d72638;
+}
+
+.hero {
+  background: linear-gradient(135deg, #d72638, #3f88c5);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+.featured {
+  padding: 3rem 0;
+}
+.featured .grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.featured .card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.featured .card:hover {
+  transform: translateY(-5px);
+}
+.featured .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.featured .card h3 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.featured .card p {
+  padding: 0 1rem 1rem;
+  color: #555;
+}
+
+.info-section {
+  background: white;
+  padding: 4rem 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+.info-section h2 {
+  font-size: 2rem;
+  color: #d72638;
+  margin-bottom: 1.5rem;
+}
+.info-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.site-footer {
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fc Barcelona</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Retro Magazin - A múlt stílusa, modern köntösben">
+  <title>Retro Magazin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="navbar__logo">FC Barcelona</div>
-        <ul class="navbar__links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Fixtures</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Shop</a></li>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">RetroMag</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="zene.html">Zene</a></li>
+          <li><a href="divat.html">Divat</a></li>
+          <li><a href="technika.html">Technika</a></li>
         </ul>
-      </nav>      
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>A múlt stílusa, modern köntösben</h2>
+      <p>Fedezd fel a 70-es, 80-as és 90-es évek világát új szemszögből!</p>
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="container grid-3">
+      <article class="card">
+        <img src="images/placeholder1.jpg" alt="Zene" />
+        <h3>Zene</h3>
+        <p>Retro slágerek, bakelitlemezek, legendás előadók – hangolj vissza a klasszikusokra!</p>
+      </article>
+      <article class="card">
+        <img src="images/placeholder2.jpg" alt="Divat" />
+        <h3>Divat</h3>
+        <p>Trapéznadrág, neon színek és bőrdzsekik – a korszak ikonikus stílusai újra trendik!</p>
+      </article>
+      <article class="card">
+        <img src="images/placeholder3.jpg" alt="Technika" />
+        <h3>Technika</h3>
+        <p>Kazettás magnók, videójátékok, régi számítógépek – egy letűnt korszak kütyüi.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 RetroMagazin | Minden jog fenntartva</p>
+    </div>
+  </footer>
 </body>
+
 </html>
