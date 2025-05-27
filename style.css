@@ -44,10 +44,28 @@ main {
 }
 .site-header .logo {
   font-family: "Oswald", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.site-header .logo a {
   color: #d72638;
-  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.site-header .logo a:hover {
+  color: rgb(171.6600790514, 30.3399209486, 44.7114624506);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+body.dark-mode .site-header .logo a {
+  color: #3f88c5;
+}
+body.dark-mode .site-header .logo a:hover {
+  color: rgb(48.488, 109.516, 160.512);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
 }
 .site-header .main-nav ul {
   list-style: none;
